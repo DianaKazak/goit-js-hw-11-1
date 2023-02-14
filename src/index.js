@@ -1,6 +1,5 @@
-
 import './css/styles.css';
-import { fetchGallery } from './js/galerry';
+import { fetchGallery } from './js/fetchGallery';
 import Notiflix from 'notiflix';
 
 const form = document.querySelector('.search-form');
@@ -12,6 +11,7 @@ let page = 0;
 
 form.addEventListener('submit', createGalerry);
 btnMore.addEventListener('click', loadMore);
+
 
 async function createGalerry(evt) {
     evt.preventDefault();
@@ -80,6 +80,7 @@ function renderImage(images) {
     return galleryList.insertAdjacentHTML('beforeend', markup);
 }
 
+
 async function loadMore() {
     page++;
     const inputValue = form.elements.searchQuery.value.trim();
@@ -98,9 +99,11 @@ async function loadMore() {
   Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
 }};
 
+
+
+
+
 //////////////////
 function cleanGallery() { 
     galleryList.innerHTML = '';
 };
-
-
