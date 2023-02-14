@@ -139,9 +139,9 @@ button {
 
    padding: 10px 20px;
     margin: 0 auto;
-
-
-   background-color: #fff;
+border-radius: 10px;
+border-color: transparent;
+   background-color: rgba(194, 239, 200, 0.921);
 
    &:hover {
        background-color: rgb(227, 227, 227);;
