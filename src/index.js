@@ -1,5 +1,5 @@
-import './css/styles.css';
-import { fetchGallery } from './js/fetchGallery';
+
+import fetchGallery from "./js/fetchGallery";
 import Notiflix from 'notiflix';
 
 const form = document.querySelector('.search-form');
